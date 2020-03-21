@@ -5,6 +5,7 @@ public class Screw extends OuterThreaded implements Serializable {
     public Enum<?> screwHead;
     public Enum<?> screwDrive;
 
+    //Screw Constructor
     public Screw(double length, Threads threadSize, Enum<Materials.ThreadedMaterials> material, Enum<Finishes.ScrewFinish> finish,
                  ScrewDesigns.ScrewHeads screwHead, ScrewDesigns.ScrewDrive screwDrive,
                  double unitPrice, int numPerUnit) throws IllegalFastener {
@@ -12,8 +13,9 @@ public class Screw extends OuterThreaded implements Serializable {
         setScrewHead(screwHead);
         setScrewDrive(screwDrive);
         setFinish(finish);
-    }
+    } //End Screw
 
+    //Sets the type of finish on a screw only if the combination is valid.
     private void setFinish(Enum<Finishes.ScrewFinish> screwFinish) throws IllegalFastener {
         String finishString = screwFinish.toString();
         String materialString = material.toString();
@@ -26,27 +28,22 @@ public class Screw extends OuterThreaded implements Serializable {
             throw  new IllegalFastener("Illegal Combination. Cannot Combine Brass and Lubricated.");
         else
             this.finish = screwFinish;
-    }
+    } //End setFinish.
 
+    //Sets the Screw Head only if the type of head is valid.
     private void setScrewHead(Enum<ScrewDesigns.ScrewHeads> headScrew) throws IllegalFastener{
         if(headScrew == null) throw new IllegalFastener("Illegal Head Type.");
-        /**
-        for(ScrewDesigns.ScrewHeads headType: ScrewDesigns.ScrewHeads.values()){
-            if (headScrew != headType) throw new IllegalFastener("Illegal Screw Head Type: " + headScrew);
-        } */
-        this.screwHead = headScrew;
-    }
+        else this.screwHead = headScrew;
+    } //End setScrewHead
 
+    //Sets the Screw Drive only if the type of drive is valid.
     private void setScrewDrive(Enum<ScrewDesigns.ScrewDrive> driveScrew) throws IllegalFastener{
         if(driveScrew == null) throw new IllegalFastener("Illegal Drive Type.");
-        /**
-        for(ScrewDesigns.ScrewDrive driveType: ScrewDesigns.ScrewDrive.values()){
-            if (driveScrew != driveType) throw new IllegalFastener("Illegal Screw Drive Type: " + driveScrew);
-        }*/
-        this.screwDrive = driveScrew;
+        else this.screwDrive = driveScrew;
     }
 
+    //Returns a String
     public String toString(){
         return screwHead + " head, " + screwDrive + " drive, " + super.toString();
-    }
+    } //End toString
 }
