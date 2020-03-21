@@ -2,6 +2,8 @@ import java.io.Serializable;
 
 public class Fastener implements Serializable{
 
+    private static final long serialVersionUID = 1L;
+
     public Enum<?> material;
     public Enum<?> finish;
     public double unitPrice;
