@@ -7,10 +7,10 @@ public class InnerThreaded extends Threaded implements Serializable {
     //InnerThreaded Constructor
     public InnerThreaded(Threads threadSize, Enum<?> material, Enum<?> finish, double unitPrice, int numPerUnit) throws IllegalFastener {
         super(threadSize, material, finish, unitPrice, numPerUnit);
-    }
+    } //End InnerThreaded
 
     //Returns a String
     public String toString(){
         return super.toString();
-    }
+    } //End toString
 }

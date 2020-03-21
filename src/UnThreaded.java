@@ -7,6 +7,5 @@ public class UnThreaded extends Fastener implements Serializable {
     //UnThreaded Constructor
     public UnThreaded(Enum<?> material, Enum<?> finish, double unitPrice, int numPerUnit) throws IllegalFastener {
         super(material, finish, unitPrice, numPerUnit);
-    }
-
+    } //End UnThreaded
 }
