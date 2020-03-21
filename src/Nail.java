@@ -42,7 +42,7 @@ public class Nail extends UnThreaded implements Serializable {
         else this.nailSizes = sizeNails;
     }
 
-    //Returns a String.
+    //Returns a part of a sentence.
     public String toString(){
         return this.nailSizes + " size, " + this.nailLengths + "\" long, " + this.nailGauges + " gauge, " + super.toString();
     }

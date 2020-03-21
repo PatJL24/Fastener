@@ -56,7 +56,7 @@ public class Fastener implements Serializable{
         return this.unitPrice * order;
     } //End getOrderCost
 
-    // Returns a String.
+    // Returns a part of a sentence.
     public String toString() {
         return this.material + ", " + "with a " + this.finish + " finish. " + this.numPerUnit
                 + " in a unit, " + "$" + this.unitPrice + " per unit.";

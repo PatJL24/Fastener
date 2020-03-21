@@ -5,7 +5,7 @@ import java.io.Serializable;
 public final class NailDesigns implements Serializable {
 
     // Generate a new serialVersionUID after you have build the CommonNailSizes class:
-    //private static final long serialVersionUID = -5312569835250174515L;
+    private static final long serialVersionUID = 1L;
 
     public static class CommonNailLengths implements Serializable {
         private static final long serialVersionUID = -1990822737665330422L;

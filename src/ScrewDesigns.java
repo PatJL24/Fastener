@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public final class ScrewDesigns implements Serializable {
 
-    private static final long serialVersionUID = 1717801317815796211L;
+    private static final long serialVersionUID = 1L;
 
     public enum ScrewDrive {Six_Lobe, Philips, Slotted, Square};
 

@@ -5,6 +5,7 @@ import java.io.Serializable;
 public final class Finishes implements Serializable {
 
     // Generate a new serialVersionUID after you have added the ScrewFinish Enum:
+    private static final long serialVersionUID = 1L;
 
     public enum BoltFinish {Chrome, Hot_Dipped_Galvanized, Plain, Yellow_Zinc, Zinc};
 

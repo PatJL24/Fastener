@@ -2,6 +2,8 @@ import java.io.Serializable;
 
 public class Screw extends OuterThreaded implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+
     public Enum<?> screwHead;
     public Enum<?> screwDrive;
 
@@ -42,7 +44,7 @@ public class Screw extends OuterThreaded implements Serializable {
         else this.screwDrive = driveScrew;
     }
 
-    //Returns a String
+    //Returns a part of a sentence.
     public String toString(){
         return screwHead + " head, " + screwDrive + " drive, " + super.toString();
     } //End toString

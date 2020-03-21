@@ -2,6 +2,8 @@ import java.io.Serializable;
 
 public class WoodScrew extends Screw implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+
     public Enum<?> screwPoint;
 
     //WoodScrew Constructor
@@ -19,7 +21,7 @@ public class WoodScrew extends Screw implements Serializable {
         else this.screwPoint = pointScrew;
     } //End setScrewPoint
 
-    //Returns a String
+    //Returns a part of a sentence.
     public String toString(){
         return "Wood Screw, " + screwPoint + " point, " + super.toString();
     } //End toString

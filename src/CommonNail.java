@@ -12,8 +12,8 @@ public class CommonNail extends Nail implements Serializable {
         super(nailSizes, nailLengths, nailGauges, finish, unitPrice, numPerUnit);
     }
 
-    //Returns a String
+    //Returns a part of a sentence.
     public String toString(){
         return "Common Nail, " + super.toString();
-    }
+    } //End toString
 }
