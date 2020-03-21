@@ -2,8 +2,8 @@ import java.io.Serializable;
 
 public class OuterThreaded extends Threaded implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private double length;
-    private Threads threadSize;
 
     //OuterThreaded Constructor
     public OuterThreaded(double length, Threads threadSize, Enum<?> material, Enum<?> finish, double unitPrice, int numPerUnit) throws IllegalFastener {
