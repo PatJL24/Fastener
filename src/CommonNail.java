@@ -2,6 +2,9 @@ import java.io.Serializable;
 
 public class CommonNail extends Nail implements Serializable {
 
+    private static final long serialVersionUID = 1L;
+
+    //CommonNail Constructor
     public CommonNail(NailDesigns.CommonNailSizes nailSizes,
                       NailDesigns.CommonNailLengths nailLengths,
                       NailDesigns.CommonNailGauges nailGauges,
@@ -9,6 +12,7 @@ public class CommonNail extends Nail implements Serializable {
         super(nailSizes, nailLengths, nailGauges, finish, unitPrice, numPerUnit);
     }
 
+    //Returns a String
     public String toString(){
         return "Common Nail, " + super.toString();
     }
